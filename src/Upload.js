@@ -33,7 +33,7 @@ export default function Upload({ onResult }) {
       setError("File size must be 10 MB or less.");
       return;
     }
-    const API_URL = "https://clausewise-bvjy.onrender.com";
+    const API_URL = "https://clausewise-3dw2.onrender.com";
     setLoading(true);
 
     const form = new FormData();
