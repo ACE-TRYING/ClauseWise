@@ -33,7 +33,7 @@ export default function Upload({ onResult }) {
       setError("File size must be 10 MB or less.");
       return;
     }
-
+    const API_URL = process.env.REACT_APP_API_URL;
     setLoading(true);
 
     const form = new FormData();
@@ -41,7 +41,7 @@ export default function Upload({ onResult }) {
 
     try {
       const response = await fetch(
-        "http://localhost:8000/analyze",
+        `${API_URL}/analyze`,
         {
           method: "POST",
           body: form,
