@@ -9,8 +9,9 @@ from pypdf.errors import PdfReadError
 from ai_engine import split_sentences, simplify_batch, make_summary
 from risk_engine import find_clauses, score
 from dotenv import load_dotenv
+from pathlib import Path
 
-load_dotenv()
+load_dotenv(Path(__file__).resolve().parent / ".env")
 
 app = FastAPI(
     title="Legal Simplify API",

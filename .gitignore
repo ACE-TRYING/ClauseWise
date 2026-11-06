@@ -1,15 +1,35 @@
-# Environment variables
-.env
-backend/.env
+# Dependencies
+node_modules/
 
-# Python
+# Python environments
+.venv/
+.venv-workers/
+venv/
+
+# Python cache
 __pycache__/
 *.py[cod]
-.venv/
 
-# Node
-node_modules/
+# Environment secrets
+.env
+.env.*
+!.env.example
+backend/.env
+
+# Cloudflare
+.wrangler/
+
+# Generated Python dependencies
+python_modules/
+
+# Build outputs
 build/
+dist/
 
-# IDE
+# Logs
+*.log
+
+# OS/editor files
+.DS_Store
+Thumbs.db
 .vscode/
