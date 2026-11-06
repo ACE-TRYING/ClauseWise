@@ -1,4 +1,3 @@
-
 {
   "name": "legal-simplify",
   "version": "1.0.0",
@@ -6,10 +5,12 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "serve": "^14.2.6"
   },
   "scripts": {
-    "start": "set BROWSER=none && react-scripts start",
+    "start": "serve -s build -l 8000",
+    "dev": "set BROWSER=none && react-scripts start",
     "build": "react-scripts build"
   },
   "browserslist": {
